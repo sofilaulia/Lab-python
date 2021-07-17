@@ -1,0 +1,4 @@
+REK829,Eren Jaeger,6230000
+REK225,Shinichi Kudo,1500000
+REK131,Nobita,-4520000
+REK842,Sofil Aulia,1200000

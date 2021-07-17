@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+    <a href="<?= base_url() ?>pasien/list" class="btn btn-primary">PASIEN LIST</a>
+</nav>
+
+<div class="col-md-12">
+    <h3>
+        Daftar Pasien
+    </h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Kode</th>
+                <th>Nama</th>
+                <th>Gender</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php
+            $nomor = 1;
+            foreach ($list_pasien as $pasien) {
+            ?>
+                <tr>
+                    <td><?= $nomor ?></td>
+                    <td><?= $pasien->kode ?></td>
+                    <td><?= $pasien->nama ?></td>
+                    <td><?= $pasien->gender ?></td>
+                </tr>
+            <?php
+                $nomor++;
+            }
+            ?>
+        </tbody>
+    </table>
+</div>
